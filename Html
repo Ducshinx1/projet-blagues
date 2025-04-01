@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="blague.css">
+    <title>Générateur de Blagues</title>
+
+</head>
+
+
+<body>
+    <div class="container">
+        <!-- Titre du générateur de blagues -->
+        <h1>Générateur de Blagues</h1>
+
+        <!-- Bouton pour générer la blague -->
+        <button id="generateBtn">Générer une blague</button>
+
+        <!-- Paragraphe pour afficher la blague -->
+        <p id="jokeDisplay"></p>
+    </div>
+   <script>
+        // Sélectionner le bouton et l'élément pour afficher la blague
+        const generateBtn = document.getElementById('generateBtn');
+        const jokeDisplay = document.getElementById('jokeDisplay');
+
+
+       
+        // Fonction pour générer une blague aléatoire
+        function generateJoke() {
+            const randomIndex = Math.floor(Math.random() * jokes.length);
+            jokeDisplay.textContent = jokes[randomIndex];
+        }
+
+        // Événement pour générer une blague au clic sur le bouton
+        generateBtn.addEventListener('click', generateJoke);
+
+
+
+const jokes = [
+"Pourquoi les plongeurs plongent-ils toujours en arrière et jamais en avant ? Parce que sinon ils tombent toujours dans le bateau !",
+"Pourquoi les moutons n’aiment-ils pas les orages ? Parce qu’ils ont peur de la laine qui gronde !",
+"Savez vous pourquoi Jamel Debbouze met toujours sa main dans sa poche ? C'est pour se gratter les noissettes",
+"Pourquoi les poissons détestent l'ordinateur ? Parce qu’ils ont peur du net !",
+"Quel est le comble pour un électricien ? De ne pas être au courant !",
+"Pourquoi les squelettes n’aiment-ils pas se battre ? Parce qu’ils n’ont pas le courage !",
+"Que dit une imprimante dans l'eau ? J'ai Papier",
+"Pourquoi la tour de pise est-elle penché ? Car elle à plus d'appuis que les Tours jumelles",
+"Quel est le médecin qui nous fait tous craquer ? L'ostéo",
+"Que fait un geek quand il a peur ? Il URL",
+"Que fait un geek quand il descend du métro ? Il libère la RAM",
+"Avec quelle monnaie les marins payent-ils ? Avec des sous marins.",
+];
+
+
+</script>
+</body>
+
+</html>
