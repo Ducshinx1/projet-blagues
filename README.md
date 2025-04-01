@@ -68,7 +68,6 @@ p {
     animation: fadeIn 1s ease forwards;
 }
 
-/* Animation pour faire apparaître la blague */
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -81,14 +80,14 @@ p {
     }
 }
 
-/* Responsive : s'assurer que l'interface soit agréable sur mobile */
+
 @media (max-width: 600px) {
     h1 {
         font-size: 2em;
     }
 
     button {
-        width: 80%; /* Le bouton prend plus de place sur mobile */
+        width: 80%;
     }
 
     .container {
